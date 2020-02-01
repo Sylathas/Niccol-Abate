@@ -1,0 +1,503 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Achievements</title>
+	<link rel="icon" href="Altre immagini/Senza titolo-1.png" type="/i/favicon.png">
+	<link href="Style.css" rel="stylesheet" type="text/css">
+	<script src="js/javascript.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/my_query.js"></script>
+</head>
+<body>
+	<div id="Cover">
+		<div class="spinner">
+  			<div class="r1"></div>
+  			<div class="r2"></div>
+  			<div class="r3"></div>
+  			<div class="r4"></div>
+			<div class="r5"></div>
+		</div>
+	</div>
+	<main>
+	<div class="cc">
+		<div id="Title" onclick="Link()"> 
+		<h1>Niccolò</h1>
+		</div>
+		<div class="Utility">
+			<hr id="linea">
+		</div>
+		
+		<!-- Viaggi -->
+		
+		<div id="Traveldiv" class="allDiv">
+			<p id="Travelp" class="allP w" onclick="openDiv()">Travel</p>
+			<p id="Close" class="allClose w" onclick="closeDiv()">X</p>
+			<div>
+				<div>
+					<div id="Europe" class="Selectworld" onClick="ViaggiE()">
+						<img class="Viaggio" src="Foto Viaggi/Viaggi/Scotland/page106-1112-full.jpg" alt="Scozia">
+						<div class="middle">
+    						<div class="text">Europe</div>
+  						</div>
+					</div>
+					<div id="World" class="Selectworld" onClick="ViaggiW()">
+						<img class="Viaggio" src="Foto Viaggi/Viaggi/Cina/page98-1061-full.jpg" alt="Cina">
+						<div class="middle">
+    						<div class="text">World</div>
+  						</div>
+					</div>
+				</div>
+				<div>
+					<div class="Europe Back" onClick="Back()"></div>
+					<div id="Spain" class="Europe">
+						<img class="E" src="Foto Viaggi/Viaggi/Spagna/page108-1020-full.jpg" alt="Spagna">
+						<div class="middle">
+    						<div class="text">Spagna 2007</div>
+  						</div>
+					</div>
+					<div id="Italy" class="Europe">
+						<img class="E" src="Foto Viaggi/Viaggi/Italia/page101-1276-full.jpg" alt="Italy">
+						<div class="middle">
+    						<div class="text">Italia 2013</div>
+  						</div>
+					</div>
+					<div id="Scotland" class="Europe">
+						<img class="E" src="Foto Viaggi/Viaggi/Scotland/page106-1077-full.jpg" alt="Scotland">
+						<div class="middle">
+    						<div class="text">Scozia 2016</div>
+  						</div>
+					</div>
+					<div id="Czech" class="Europe">
+						<img class="E" src="Foto Viaggi/Viaggi/Repubblica Ceca/17662416_776119499203201_5124412836197433344_n.jpg" 	alt="Austria">
+						<div class="middle">
+    						<div class="text">Austria 2017</div>
+  						</div>
+					</div>
+						<div id="England" class="Europe">
+						<img class="E" src="Foto Viaggi/Viaggi/Gran Bretagna/IMG_1995.JPG" alt="England">
+						<div class="middle">
+    						<div class="text">Inghilterra 2018</div>
+  						</div>
+					</div>
+				</div>
+				<div>
+					<div class="World Back" onClick="Back()"></div>
+					<div id="Cina" class="World">
+						<img class="W" src="Foto Viaggi/Viaggi/Cina/page98-1062-full.jpg" alt="Cina">
+						<div class="middle">
+    						<div class="text">Cina 2002</div>
+  						</div>
+					</div>
+					<div id="Ecuador" class="World">
+						<img class="W" src="Foto Viaggi/Viaggi/Ecuador/page99-1009-full.jpg" alt="Ecuador">
+						<div class="middle">
+    						<div class="text">Ecuador 2004</div>
+  						</div>
+					</div>
+					<div id="Galapagos" class="World">
+						<img class="W" src="Foto Viaggi/Viaggi/Galapagos/page100-1009-full.jpg" alt="Galapagos">
+						<div class="middle">
+    						<div class="text">Galapagos 2004</div>
+  						</div>
+					</div>
+					<div id="Egipt" class="World">
+						<img class="W" src="Foto Viaggi/Viaggi/Egitto/page117-1023-full.jpg" alt="Egipt">
+						<div class="middle">
+    						<div class="text">Egitto 2006</div>
+  						</div>
+					</div>
+					<div id="California" class="World">
+						<img class="W" src="Foto Viaggi/Viaggi/California/page107-1088-full.jpg" alt="California">
+						<div class="middle">
+    						<div class="text">California 2010</div>
+  						</div>
+					</div>
+					<div id="Giappone" class="World">
+						<img class="W" src="Foto Viaggi/Viaggi/Giappone/page114-1090-full.jpg" alt="Japan">
+						<div class="middle">
+    						<div class="text">Giappone 2014</div>
+  						</div>
+					</div>
+					<div id="NuovaZelanda" class="World">
+						<img class="W" src="Foto Viaggi/Viaggi/New Zealand/11205631_10205727830369068_308609370760317407_n.jpg" 	alt="New Zealand">
+						<div class="middle">
+    						<div class="text">Nuova Zelanda 2015</div>
+  						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Lavoro -->
+		
+		<div id="Designdiv" class="allDiv">
+			<p id="Designp" class="allP w" onclick="openDiv2(); setTimeout(Image3, 900); setTimeout(Image4, 950);">Work</p>
+			<p id="Close1" class="allClose w" onclick="closeDiv2()">X</p>
+			<div id="University" class="Selectwork" onClick="WorkU()">
+				<img class="Work" src="Work/Copertine/Pittogramma.png" alt="University">
+				<div class="middle">
+    				<div class="text">University</div>
+  				</div>
+			</div>
+			<div id="Personal" class="Selectwork" onClick="WorkP()">
+				<img class="Work" src="Work/Copertine/Daredevil (Bigger).png" alt="Personal">
+				<div class="middle">
+    				<div class="text">Personal</div>
+  				</div>
+			</div>
+			<div>
+				<div class="Pers Back" id="Back1" onClick="BackW()"></div>
+				<div class="Pers ThreeA" id="App4" onClick="BackApp()"></div>
+				<div class="Pers One" id="App" onClick="App()">
+					<img class="C W" src="Work/Personale/App/Schermata 2018-06-13 alle 12.24.47.png" alt="App">
+					<div class="middle">
+    					<div class="text">App</div>
+  					</div>
+				</div>
+				<div class="Pers TwoA" id="App2">
+					<img class="C" src="Work/Personale/App/Schermata 2018-06-13 alle 12.24.52.png" alt="App">
+				</div>
+				<div class="Pers" id="App3">
+					<img class="C" src="Work/Personale/App/Schermata 2018-06-13 alle 12.24.45.png" alt="App">
+				</div>
+				<div class="Pers ThreeA" id="Concerto2" onClick="BackConcerto()"></div>
+				<p class="Testi" id="Concertotesto">Locandina del concerto del mio liceo.</p>
+				<div class="Pers Two" id="Concerto" onClick="Concerto()">
+					<img class="C W" src="Work/Personale/Concerto Buonarroti/A2.jpg" alt="Concerto">
+					<div class="middle">
+    					<div class="text">Concerto</div>
+  					</div>
+				</div>
+				<div class="Pers ThreeA" id="Daredevil2" onClick="BackDaredevil()"></div>
+				<p class="Testi" id="Daredeviltesto">Locandina idea per la serie Marvel di Daredevil, prodotta da Netflix.</p>
+				<div class="Pers Three" id="Daredevil" onClick="Daredevil()">
+					<img class="C W" src="Work/Personale/Daredevil/Daredevil (Bigger).png" alt="Daredevil">
+					<div class="middle">
+    					<div class="text">Daredevil</div>
+  					</div>
+				</div>
+				<div class="Pers ThreeA" id="Giorni2" onClick="BackGiorni()"></div>
+				<p class="Testi" id="Giornitesto">Locandina per i giorni classici del liceo Galileo Galilei di Pisa.</p>
+				<div class="Pers Four" id="Giorni" onClick="Giorni()">
+					<img class="C W" src="Work/Personale/Giorni Classici/Volantino-1.jpg" alt="Giorni classici">
+					<div class="middle">
+    					<div class="text">Giorni Classici</div>
+  					</div>
+				</div>
+				<div class="Pers ThreeA" id="Leo2" onClick="BackLeo()"></div>
+				<p class="Testi" id="Leotesto">Biglietto da visita per mio fratello Leonardo.</p>
+				<div class="Pers Five" id="Leo" onClick="Leo()">
+					<img class="C W" src="Work/Personale/Leonardo Abate/LA1-2.jpg" alt="Leonardo Abate">
+					<div class="middle">
+    					<div class="text">Leonardo Abate</div>
+  					</div>
+				</div>
+				<div class="Pers ThreeA" id="Elezioni2" onClick="BackElezioni()"></div>
+				<p class="Testi" id="Elezionitesto">Volantino per le elezioni della lista Wake Up del Liceo Buonarroti durante le elezioni d'istituto.</p>
+				<div class="Pers Six" id="Elezioni" onClick="Elezioni()">
+					<img class="C W" src="Work/Personale/Volantino elezioni/Ue.jpg" alt="Elezioni">
+					<div class="middle">
+    					<div class="text">Elezioni</div>
+  					</div>
+				</div>
+				<div class="Uni Back" id="Back2" onClick="BackW()"></div>
+				<div class="Uni ThreeA" id="Guernica2" onClick="BackGuernica()"></div>
+				<p class="Testi" id="Guernicatesto">Progetto del laboratorio di disegno la cui consegna era di creare un motion di un'opera famosa, in questo caso di Guernica di Picasso.</p>
+				<div class="Uni Uno" id="Guernica" onClick="Guernica()">
+					<img class="C W" src="Work/Università/Guernica/Schermata 2018-06-13 alle 12.17.27.png" alt="Guernica">
+					<div class="middle">
+    					<div class="text">Guernica</div>
+  					</div>
+				</div>
+				<div class="Uni ThreeA" id="Impaginazioni2" onClick="BackImpaginazioni()"></div>
+				<p class="Testi" id="Impaginazionitesto">Progetto del laboratorio di fondamenti del progetto che chiedeva un prodotto editoriale iconografico sul 900, da me sviluppato tramite l'utilizzo di vari film.</p>
+				<div class="Uni Due" id="Impaginazioni" onClick="Impaginazioni()">
+					<img class="C W" src="Work/Università/Impaginazioni/copertina.jpg" alt="Impaginazioni">
+					<div class="middle">
+    					<div class="text">Impaginazioni</div>
+  					</div>
+				</div>
+				<div class="Uni ThreeA" id="Uvetta2" onClick="BackUvetta()"></div>
+				<p class="Testi" id="Uvettatesto">Progetto del laboratorio di cultura visiva riguardante lo sviluppo di una ricetta studiando i vari ingredienti graficamente fino ad arrivare al motion di essa.</p>
+				<div class="Uni Tre" id="Uvetta" onClick="Uvetta()">
+					<img class="C W" src="Work/Università/Panettone/Schermata 2018-06-13 alle 12.33.34.png" alt="Illustrazioni">
+					<div class="middle">
+    					<div class="text">Uvetta</div>
+  					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!-- Musica -->
+		
+		<div id="Musicdiv" class="allDiv">
+			<p id="Musicp" class="allP b" onclick="openDiv3()">Music</p>
+			<p id="Close2" class="allClose b" onclick="closeDiv3()">X</p>
+			<div>
+				<div id="PopPunk" class="Selectmusic" onClick="MusicPp()">
+				<img class="Music" src="Music/Generi/Pop Punk.jpg" alt="Pop Punk">
+					<div class="middle">
+    					<div class="text">Pop Punk</div>
+  					</div>
+				</div>
+				<div id="Pop" class="Selectmusic" onClick="MusicP()">
+					<img class="Music" src="Music/Generi/Pop.jpg" alt="Pop">
+					<div class="middle">
+    					<div class="text">Pop</div>
+  					</div>
+				</div>
+				<div id="Metal" class="Selectmusic" onClick="MusicM()">
+					<img class="Music" src="Music/Generi/Metal.jpg" alt="Metal">
+					<div class="middle">
+    					<div class="text">Metal</div>
+  					</div>
+				</div>
+				<div id="Metalcore" class="Selectmusic" onClick="MusicMc()">
+					<img class="Music" src="Music/Generi/metalcore.jpg" alt="Metalcore">
+					<div class="middle">
+    					<div class="text">Metalcore</div>
+  					</div>
+				</div>
+				<div id="Rock" class="Selectmusic" onClick="MusicR()">
+				<img class="Music" src="Music/Generi/Rock.jpg" alt="Rock">
+					<div class="middle">
+    					<div class="text">Rock</div>
+  					</div>
+				</div>
+				<div id="Acoustic" class="Selectmusic" onClick="MusicA()">
+					<img class="Music" src="Music/Generi/Acoustic.jpg" alt="Acoustic">
+					<div class="middle">
+    					<div class="text">Acoustic</div>
+  					</div>
+				</div>
+				<div id="Rap" class="Selectmusic" onClick="MusicRa()">
+					<img class="Music" src="Music/Generi/Rap.jpg" alt="Rap">
+					<div class="middle">
+    					<div class="text">Rap</div>
+  					</div>
+				</div>
+			</div>
+			<div>
+				<div class="PopPunk Back" onClick="BackM()"></div>
+				<div class="PopPunk Uno">
+					<img class="Pp C" src="Music/Pop Pun/Neck Dee.jpg" alt="Neck Deep">
+					<div class="middle">
+    					<div class="text">Neck Deep</div>
+  					</div>
+				</div>
+				<div class="PopPunk Due">
+					<img class="Pp C" src="Music/Pop Pun/The story so far.jpg" alt="The story so far">
+					<div class="middle">
+    					<div class="text">The Story so Far</div>
+  					</div>
+				</div>
+				<div class="PopPunk Tre">
+					<img class="Pp C" src="Music/Pop Pun/state champs.jpg" alt="State Champs">
+					<div class="middle">
+    					<div class="text">State Champs</div>
+  					</div>
+				</div>
+				<div class="Pop Back" onClick="BackM()"></div>
+				<div class="Pop Uno">
+					<img class="P C" src="Music/Pop/Handwritten Shawn.jpg" alt="Shawn Mendes">
+					<div class="middle">
+    					<div class="text">Shawn Mendes</div>
+  					</div>
+				</div>
+				<div class="Pop Due">
+					<img class="P C" src="Music/Pop/Taylor Swift.jpg" alt="Taylor Swift">
+					<div class="middle">
+    					<div class="text">Taylor Swift</div>
+  					</div>
+				</div>
+				<div class="Pop Tre">
+					<img class="P C" src="Music/Pop/Charlie puth.png" alt="Charlie Puth">
+					<div class="middle">
+    					<div class="text">Charlie Puth</div>
+  					</div>
+				</div>
+				<div class="Metal Back" onClick="BackM()"></div>
+				<div class="Metal Uno Common">
+					<img class="M C" src="Music/Metal/Iron.jpg" alt="Iron Maiden">
+					<div class="middle">
+    					<div class="text">Iron Maiden</div>
+  					</div>
+				</div>
+				<div class="Metal Due">
+					<img class="M C" src="Music/Metal/Blind.jpg" alt="Blind Guardian">
+					<div class="middle">
+    					<div class="text">Blind Guardian</div>
+  					</div>
+				</div>
+				<div class="Metal Tre">
+					<img class="M C" src="Music/Metal/Ayreon.jpg" alt="Ayreon">
+					<div class="middle">
+    					<div class="text">Ayreon</div>
+  					</div>
+				</div>
+				<div class="Acoustic Back" onClick="BackM()"></div>
+				<div class="Acoustic Uno">
+					<img class="A C" src="Music/Acoustic/Front.jpg" alt="Front Porch Step">
+					<div class="middle">
+    					<div class="text">Front Porch Step</div>
+  					</div>
+				</div> 
+				<div class="Acoustic Due">
+					<img class="A C" src="Music/Acoustic/This.jpg" alt="This Wild Life">
+					<div class="middle">
+    					<div class="text">This Wild Life</div>
+  					</div>
+				</div>
+				<div class="Acoustic Tre">
+					<img class="A C" src="Music/Acoustic/Hearts.jpg" alt="Hearts & Colors">
+					<div class="middle">
+    					<div class="text">Hearts And Colors</div>
+  					</div>
+				</div><div class="Rap Back" onClick="BackM()"></div>
+				<div class="Rap Uno">
+					<img class="Ra C" src="Music/Rap/Post.jpg" alt="Post Malone">
+					<div class="middle">
+    					<div class="text">Post Malone</div>
+  					</div>
+				</div>
+				<div class="Rap Due">
+					<img class="Ra C" src="Music/Rap/Gemitaiz.jpg" alt="Gemitaiz">
+					<div class="middle">
+    					<div class="text">Gemitaiz</div>
+  					</div>
+				</div>
+				<div class="Rap Tre">
+					<img class="Ra C" src="Music/Rap/Drake.jpg" alt="Drake">
+					<div class="middle">
+    					<div class="text">Drake</div>
+  					</div>
+				</div><div class="Rock Back" onClick="BackM()"></div>
+				<div class="Rock Uno">
+					<img class="R C" src="Music/Rock/Guns n Roses.jpg" alt="Guns n Roses">
+					<div class="middle">
+    					<div class="text">Guns n Roses</div>
+  					</div>
+				</div>
+				<div class="Rock Due">
+					<img class="R C" src="Music/Rock/Foo Fighters.jpg" alt="Foo Fighters">
+					<div class="middle">
+    					<div class="text">Foo Fighters</div>
+  					</div>
+				</div>
+				<div class="Rock Tre">
+					<img class="R C" src="Music/Rock/Rise.jpg" alt="Rise Against">
+					<div class="middle">
+    					<div class="text">Rise Against</div>
+  					</div>
+				</div><div class="Metalcore Back" onClick="BackM()"></div>
+				<div class="Metalcore Uno">
+					<img class="Mc C" src="Music/Metalcore/Bring.jpg" alt="Bring me the horizon">
+					<div class="middle">
+    					<div class="text">Bring me the horizon</div>
+  					</div>
+				</div>
+				<div class="Metalcore Due">
+					<img class="Mc C" src="Music/Metalcore/Architects.jpg" alt="Architects">
+					<div class="middle">
+    					<div class="text">Architects</div>
+  					</div>
+				</div>
+				<div class="Metalcore Tre">
+					<img class="Mc C" src="Music/Metalcore/Northlane.jpeg" alt="Northlane">
+					<div class="middle">
+    					<div class="text">Northlane</div>
+  					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Film -->
+		
+		<div id="Filmdiv" class="allDiv">
+			<p id="Filmp" class="allP b" onclick="openDiv4()">Interests</p>
+			<p id="Close3" class="allClose b" onclick="closeDiv4()">X</p>
+			<div id="Guitar" class="Selectinterest" onClick="InterestG()">
+				<img class="Interest" src="Interessi/Guitar.jpg" alt="Music">
+				<div class="middle">
+    				<div class="text g">Music</div>
+  				</div>
+			</div>
+			<div class="Testo" id="Red"></div>
+				<p id="G" class="TI">
+					Ho sempre avuto la passione della musica fin da piccolo, probabilmente trasmessa dai miei genitori e da mio fratello maggiore.<br>
+					La mia evoluzione musicale è stata molto particolare. Sono partito da un ascolto intensivo di Metal da piccolo, ma con la crescita sono cambiati i gusti portando ad un ascolto sempre maggiore di pop punk e pop, però costantemente svariando tra una grossa moltitudine di generi, tra cui folk e metalcore.<br>
+					Suono la chitarra elettrica da 7 anni, però da autodidatta suono pure chitarra acustica, basso elettrico e canto. 
+				</p>
+			<div id="Computer" class="Selectinterest" onClick="InterestC()">
+				<img class="Interest" src="Music/Generi/Pop.jpg" alt="Computer">
+				<div class="middle">
+    				<div class="text c">Computer</div>
+  				</div>
+			</div>
+			<div class="Testo" id="Blue"></div>
+				<p id="C" class="TI">
+					Sono nato circondato da computer, e questa passione è rimasta nel tempo. Il mio interesse verso i computer parte da un interesse verso la loro struttura e quindi dell’hardware con cui vengono composti, portandomi ad assemblare il mio stesso computer fisso, ma finisce in un interesse verso il software, che mi fa intraprendere un indirizzo di Liceo scientifico che introduce la materia dell’informatica. 
+				</p>
+			<div id="Games" class="Selectinterest" onClick="InterestGa()">
+				<img class="Interest" src="Music/Generi/Metal.jpg" alt="Games">
+				<div class="middle">
+    				<div class="text ga">Games</div>
+  				</div>
+			</div>
+			<div class="Testo" id="Green"></div>
+				<p id="Ga" class="TI">
+					Da piccolo giocavo col gameboy color di mio fratello, poi crescendo ho cominciato a prendere videogiochi e console mie. Nonostante sia rimasta l’affezione verso i giochi della nintendo, gioco principalmente sul computer grazie alla facilità di download e qualità grafica molto maggiore. 
+				</p>
+			<div id="Design" class="Selectinterest" onClick="InterestD()">
+				<img class="Interest" src="Interessi/Design.jpeg" alt="Design">
+				<div class="middle">
+    				<div class="text d">Design</div>
+  				</div>
+			</div>
+			<div class="Testo" id="Yellow"></div>
+				<p id="D" class="TI">
+					Il design è probabilmente la mia più grande passione, e deriva dal mio percorso scolastico. Ho sempre fatto parte di un collettivo durante le superiori, il quale organizzava pure diversi eventi all’interno della scuola. Questi eventi necessitavano locandine, e spesso ero io a farmi avanti per farle, così facendomi capire quanto mi piacesse illustrare. Solo in quinta superiore mi son reso conto di cosa fosse il design, e di quanti sbocchi ci fossero, portandomi finalmente al provare il test del Politecnico di Milano ed entrando a Design della Comunicazione.
+				</p>
+			<div id="Photograpy" class="Selectinterest" onClick="InterestP()">
+				<img class="Interest foto" src="Interessi/Fotografia.jpg" alt="Photograpy">
+				<div class="middle">
+    				<div class="text p">Photograpy</div>
+  				</div>
+			</div>
+			<div class="Testo" id="Orange"></div>
+				<p id="P" class="TI">
+					La fotografia è una passione cominciata di recente. <br> 
+					Mio padre ha sempre fatto fotografie durante i suoi viaggi e quindi sono nato in quel mondo, ma fino a pochi mesi fa oltre a guardare foto non mi sono mai cimentato nel produrne. A causa dell’alto costo dei corpi macchina e degli obbiettivi la mia macchina al momento è un’analogica Olympus om-1, regalo di mio padre in quanto precedente proprietario.  
+				</p>
+			<div id="Architecture" class="Selectinterest" onClick="InterestA()">
+				<img class="Interest" src="Interessi/Architettura.jpg" alt="Architecture">
+				<div class="middle">
+    				<div class="text a">Architecture</div>
+  				</div>
+			</div>
+			<div class="Testo" id="Pink"></div>
+				<p id="A" class="TI">
+					Mio nonno era un ingegnere quindi non gli sono mai stati molto simpatici gli architetti, ed anche per questo mia madre non studiò mai architettura. <br>
+					Però la mia passione per l’architettura arrivò proprio da lei, che fin da piccolo mi mostrava nella realtà e nei libri edifici interessanti per cercare di farmi interessare a tale argomento, eventualmente riuscendoci. 
+				</p>
+			<div class="Testo" id="Purple"></div>
+				<p id="T" class="TI">
+					Ho sempre preferito il tè al caffè. Contiene poca caffeina, svegliandomi ma non rendendomi dipendente, ha un sapore leggero e può avere mille sfumature diverse, cosa che non ho mai trovato nel caffè. La passione è cominciata, anche questa, dai miei genitori, che girando il mondo portavano foglie di tè esotico, principalmente Indiano e cinese, a casa, ma io non potendo girare il mondo quanto loro ho cominciato ad andare in negozi di tè, così da poter provare moltissimi tipi di tè di qualità non muovendomi dall’Italia.  
+				</p>
+			<div id="Tea" class="Selectinterest" onClick="InterestT()">
+				<img class="Interest foto" src="Interessi/Tea.jpg" alt="Tea">
+				<div class="middle">
+    				<div class="text t">Tea</div>
+  				</div>
+			</div>
+		</div>
+	</div>
+	</main>
+</body>
+	<script>
+		
+	</script>
+</html>
